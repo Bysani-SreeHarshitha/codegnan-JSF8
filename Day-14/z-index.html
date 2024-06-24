@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>layers and z-index</title>
+	<style>
+		.a{
+			position: absolute;
+			top: 0px;
+			height: 200px;
+			width: 200px;
+			background-color: lightblue;
+			align-content: center;
+			text-align: center;
+			z-index: 0;
+		}
+		.b{
+			position: absolute;
+			top: 40px;
+			left: 30px;
+			height: 200px;
+			width: 200px;
+			background-color: pink;
+			align-content: center;
+			text-align: center;
+			z-index: 0;
+		}
+		.c{
+			position: absolute;
+			top: 100px;
+			left: 60px;
+			height: 200px;
+			width: 200px;
+			background-color: lightgreen;
+			align-content: center;
+			text-align: center;
+			z-index: 0;
+		}
+		.a:hover{
+			z-index: 1;
+			border: solid;
+			box-shadow: 0px 0px 10px black;
+		}
+		.b:hover{
+			z-index: 1;
+			border: solid;
+			box-shadow: 0px 0px 10px black;
+		}
+		.c:hover{
+			z-index: 1;
+			border: solid;
+		    box-shadow: 0px 0px 10px black;
+		}
+	</style>
+	
+</head>
+<body>
+	<div class="a">
+		Layer 1
+	</div>
+	<div class="b">
+		Layer 2
+	</div>
+	<div class="c">
+		Layer 3
+	</div>
+</body>
+</html>
